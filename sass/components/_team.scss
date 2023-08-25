@@ -81,7 +81,7 @@
         margin-bottom: 30px;
     }
 }}
-@media (min-width:481px){
+@media (768px>=width>=481px){
 .team {
 
     &__container {
@@ -176,13 +176,13 @@
 .team {
 
     &__container {
-        @include default-width;
+        width: 100%;
     }
 
     &__items-list {
-
         @include flex(row);
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         padding-left: 0;
     }
 
@@ -195,6 +195,7 @@
         background-color: $background-color_1;
         box-shadow: 0px 1px 3px $shadow-color_2, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
         border-radius: 0px 0px 4px 4px;
+        margin: 1%;
     }
 
     &__item-name {
@@ -255,7 +256,6 @@
     &__socials-list {
         padding-left: 0;
         text-align: center;
-
         @include flex(row);
         justify-content: center;
         margin-bottom: 30px;

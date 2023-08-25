@@ -46,7 +46,7 @@
         padding: 0 10px;
     }
 }}
-@media (min-width:481px){
+@media (768px>=width>=481px){
 .clients {
 
     &__container {
@@ -101,9 +101,8 @@
 }}
 @media (min-width:769px){
 .clients {
-
     &__container {
-        @include default-width;
+        width:100%;
     }
 
     &__title {
@@ -115,15 +114,11 @@
         width: 170px;
         height: 92px;
         border-radius: 4px;
-        margin-left: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: border $default-transition;
-
-        &:first-child {
-            margin-left: 0;
-        }
+        margin: 5px 10px;
 
         &:hover {
             border: $default-border $border-color_1;
@@ -149,7 +144,9 @@
 
     &__items-list {
         @include flex(row);
-        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
         padding-left: 0;
     }
 }}

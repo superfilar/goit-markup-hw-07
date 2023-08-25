@@ -215,7 +215,7 @@
         fill: $svg-color_3;
     }
 }}
-@media (min-width:481px){
+@media (768px>=width>=481px){
 .modal {
     position: fixed;
     background: $background-color_7;

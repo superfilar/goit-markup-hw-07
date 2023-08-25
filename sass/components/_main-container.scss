@@ -34,7 +34,6 @@
         
             &_item-vector {
                 align-self: center;
-                width: 95%;
                 height: 120px;
                 background: #F5F4FA;
                 border-radius: 4px;
@@ -45,7 +44,7 @@
             }
     }}
 
-@media(min-width:481px) and (max-width:768px){
+@media(768px>=width>=481px){
 .main-container {
 
         &_content {
@@ -96,12 +95,15 @@
 .main-container {
 
         &_content {
-            @include default-width;
+            width: 100%;
+            max-width: 1200px;
         }
 
         &_items-list {
             @include font-style(14px, 400, 0.03em, 1);
-            display: flex;
+            @include flex(row);
+            flex-wrap: wrap;
+            justify-content: center;
             padding-top: 94px;
             padding-left: 0;
             padding-bottom: 0;
@@ -110,6 +112,8 @@
 
         &_item {
             padding: 0 7px;
+            width: 270px;
+            margin: 1%;
         }
 
         &_item-title {
