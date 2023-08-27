@@ -1,9 +1,9 @@
-@media (max-width:768px) {
+@media (max-width:1199px) {
     .profession {
         display: none;
     }
 }
-@media (min-width:769px){
+@media (min-width:1200px){
 .profession {
     @include default-padding;
 

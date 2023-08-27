@@ -1,9 +1,9 @@
-@media (max-width:480px) {
+@media (max-width:767px) {
     .page-nav {
         display: none;
     }
 }
-@media (768px>=width>=481px) {
+@media (1199px>=width>=768px) {
     .page-nav {
         @include font-style(14px, 500, 0.02em, 115%);
         align-items: center;
@@ -51,7 +51,7 @@
         }
     }
 }
-@media (min-width:769px){
+@media (min-width:1200px){
 .page-nav {
     @include font-style(14px, 500, 0.02em, 115%);
     align-items: center;

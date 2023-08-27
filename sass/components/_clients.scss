@@ -1,4 +1,4 @@
-@media (max-width:480px){
+@media (max-width:767px){
 .clients{
 
     &__container {
@@ -46,7 +46,7 @@
         padding: 0 10px;
     }
 }}
-@media (768px>=width>=481px){
+@media (1199px>=width>=768px){
 .clients {
 
     &__container {
@@ -95,11 +95,11 @@
     &__items-list {
         @include flex(row);
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         padding-left: 0;
     }
 }}
-@media (min-width:769px){
+@media (min-width:1200px){
 .clients {
     &__container {
         width:100%;

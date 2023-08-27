@@ -1,4 +1,4 @@
-@media (max-width:480px){
+@media (max-width:767px){
 .page-footer {
     background-color: $background-color_3;
     width: 100%;
@@ -145,7 +145,7 @@
         color: $color_5;
     }
 }}
-@media (768px>=width>=481px){
+@media (1199px>=width>=768px){
 .page-footer {
     background-color: $background-color_3;
     width: 100%;
@@ -309,7 +309,7 @@
         color: $color_5;
     }
 }}
-@media (min-width:769px){
+@media (min-width:1200px){
 .page-footer {
     background-color: $background-color_3;
     width: 100%;
