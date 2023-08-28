@@ -1,4 +1,4 @@
-@media (max-width:480px){
+@media (max-width:767px){
 .team{
     &__container {
         width: 100%;
@@ -81,7 +81,7 @@
         margin-bottom: 30px;
     }
 }}
-@media (1199px>=width>=481px){
+@media (1199px>=width>=768px){
 .team {
 &__container {
         width: 100%;
